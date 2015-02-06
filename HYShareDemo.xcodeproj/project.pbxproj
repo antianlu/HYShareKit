@@ -1,0 +1,670 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		53662B7B45EF3EA23682B13E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C70C0509A65899D8E4A2005 /* libPods.a */; };
+		AA6ACCC71A82F96C000A4F83 /* HYImageUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6ACCC61A82F96C000A4F83 /* HYImageUtilities.m */; };
+		AA6ACCD11A82FE3E000A4F83 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6ACCD01A82FE3E000A4F83 /* libstdc++.dylib */; };
+		AA6ACCD61A82FE99000A4F83 /* TencentOpenAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6ACCD41A82FE99000A4F83 /* TencentOpenAPI.framework */; };
+		AA6ACCD71A82FE99000A4F83 /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AA6ACCD51A82FE99000A4F83 /* TencentOpenApi_IOS_Bundle.bundle */; };
+		AA6ACCDB1A83001B000A4F83 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6ACCDA1A83001B000A4F83 /* CoreTelephony.framework */; };
+		AA6ACCDD1A830056000A4F83 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6ACCDC1A830056000A4F83 /* SystemConfiguration.framework */; };
+		AA6ACCDF1A830063000A4F83 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6ACCDE1A830063000A4F83 /* libz.dylib */; };
+		AA6ACCE11A8300A5000A4F83 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6ACCE01A8300A5000A4F83 /* CFNetwork.framework */; };
+		AA6ACCE31A8300AF000A4F83 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6ACCE21A8300AF000A4F83 /* WebKit.framework */; };
+		AA6ACCE51A8300F0000A4F83 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AA6ACCE41A8300F0000A4F83 /* libsqlite3.dylib */; };
+		AA6ACCEB1A83046C000A4F83 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA6ACCE71A83046C000A4F83 /* LaunchScreen.xib */; };
+		AA6ACCEC1A83046C000A4F83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA6ACCE91A83046C000A4F83 /* Main.storyboard */; };
+		AA6ACCF61A835B95000A4F83 /* HYShareHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6ACCEF1A835B95000A4F83 /* HYShareHandler.m */; };
+		AA6ACCF71A835B95000A4F83 /* HYSinaHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6ACCF11A835B95000A4F83 /* HYSinaHandler.m */; };
+		AA6ACCF81A835B95000A4F83 /* HYTencentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6ACCF31A835B95000A4F83 /* HYTencentHandler.m */; };
+		AA6ACCF91A835B95000A4F83 /* HYWxHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6ACCF51A835B95000A4F83 /* HYWxHandler.m */; };
+		AABDD6EA1A82EBEE00D21BC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AABDD6E91A82EBEE00D21BC5 /* main.m */; };
+		AABDD6ED1A82EBEE00D21BC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AABDD6EC1A82EBEE00D21BC5 /* AppDelegate.m */; };
+		AABDD6F01A82EBEE00D21BC5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AABDD6EF1A82EBEE00D21BC5 /* ViewController.m */; };
+		AABDD6F51A82EBEE00D21BC5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AABDD6F41A82EBEE00D21BC5 /* Images.xcassets */; };
+		AABDD7041A82EBEE00D21BC5 /* HYShareDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AABDD7031A82EBEE00D21BC5 /* HYShareDemoTests.m */; };
+		AABDD7271A82EF5D00D21BC5 /* HYShareActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = AABDD7101A82EF5D00D21BC5 /* HYShareActivity.m */; };
+		AABDD7281A82EF5D00D21BC5 /* HYSinaActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = AABDD7121A82EF5D00D21BC5 /* HYSinaActivity.m */; };
+		AABDD7291A82EF5D00D21BC5 /* HYTencentQzoneActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = AABDD7141A82EF5D00D21BC5 /* HYTencentQzoneActivity.m */; };
+		AABDD72A1A82EF5D00D21BC5 /* HYTencentSessionActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = AABDD7161A82EF5D00D21BC5 /* HYTencentSessionActivity.m */; };
+		AABDD72B1A82EF5D00D21BC5 /* HYWxSessionActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = AABDD7181A82EF5D00D21BC5 /* HYWxSessionActivity.m */; };
+		AABDD72C1A82EF5D00D21BC5 /* HYWxTimeLineActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = AABDD71A1A82EF5D00D21BC5 /* HYWxTimeLineActivity.m */; };
+		AABDD72E1A82EF5D00D21BC5 /* HYShareItem.m in Sources */ = {isa = PBXBuildFile; fileRef = AABDD71E1A82EF5D00D21BC5 /* HYShareItem.m */; };
+		AABDD72F1A82EF5D00D21BC5 /* HYShareKit.m in Sources */ = {isa = PBXBuildFile; fileRef = AABDD7201A82EF5D00D21BC5 /* HYShareKit.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AABDD6FE1A82EBEE00D21BC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AABDD6DC1A82EBEE00D21BC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AABDD6E31A82EBEE00D21BC5;
+			remoteInfo = HYShareDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C70C0509A65899D8E4A2005 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		45307FFC0D7D9E1E1F28E4F6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A96E21A37369444D0EC4AB2A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		AA6ACCBE1A82F6F0000A4F83 /* HY_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HY_Prefix.pch; sourceTree = "<group>"; };
+		AA6ACCC51A82F96C000A4F83 /* HYImageUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYImageUtilities.h; sourceTree = "<group>"; };
+		AA6ACCC61A82F96C000A4F83 /* HYImageUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYImageUtilities.m; sourceTree = "<group>"; };
+		AA6ACCD01A82FE3E000A4F83 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		AA6ACCD41A82FE99000A4F83 /* TencentOpenAPI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TencentOpenAPI.framework; sourceTree = "<group>"; };
+		AA6ACCD51A82FE99000A4F83 /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
+		AA6ACCDA1A83001B000A4F83 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		AA6ACCDC1A830056000A4F83 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AA6ACCDE1A830063000A4F83 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		AA6ACCE01A8300A5000A4F83 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		AA6ACCE21A8300AF000A4F83 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		AA6ACCE41A8300F0000A4F83 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		AA6ACCE81A83046C000A4F83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = HYShareDemo/Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AA6ACCEA1A83046C000A4F83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = HYShareDemo/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA6ACCEE1A835B95000A4F83 /* HYShareHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYShareHandler.h; sourceTree = "<group>"; };
+		AA6ACCEF1A835B95000A4F83 /* HYShareHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYShareHandler.m; sourceTree = "<group>"; };
+		AA6ACCF01A835B95000A4F83 /* HYSinaHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSinaHandler.h; sourceTree = "<group>"; };
+		AA6ACCF11A835B95000A4F83 /* HYSinaHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSinaHandler.m; sourceTree = "<group>"; };
+		AA6ACCF21A835B95000A4F83 /* HYTencentHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTencentHandler.h; sourceTree = "<group>"; };
+		AA6ACCF31A835B95000A4F83 /* HYTencentHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTencentHandler.m; sourceTree = "<group>"; };
+		AA6ACCF41A835B95000A4F83 /* HYWxHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYWxHandler.h; sourceTree = "<group>"; };
+		AA6ACCF51A835B95000A4F83 /* HYWxHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYWxHandler.m; sourceTree = "<group>"; };
+		AABDD6E41A82EBEE00D21BC5 /* HYShareDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYShareDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AABDD6E81A82EBEE00D21BC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AABDD6E91A82EBEE00D21BC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AABDD6EB1A82EBEE00D21BC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = HYShareDemo/AppDelegate.h; sourceTree = "<group>"; };
+		AABDD6EC1A82EBEE00D21BC5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = HYShareDemo/AppDelegate.m; sourceTree = "<group>"; };
+		AABDD6EE1A82EBEE00D21BC5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AABDD6EF1A82EBEE00D21BC5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AABDD6F41A82EBEE00D21BC5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AABDD6FD1A82EBEE00D21BC5 /* HYShareDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HYShareDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AABDD7021A82EBEE00D21BC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AABDD7031A82EBEE00D21BC5 /* HYShareDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYShareDemoTests.m; sourceTree = "<group>"; };
+		AABDD70F1A82EF5D00D21BC5 /* HYShareActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYShareActivity.h; sourceTree = "<group>"; };
+		AABDD7101A82EF5D00D21BC5 /* HYShareActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYShareActivity.m; sourceTree = "<group>"; };
+		AABDD7111A82EF5D00D21BC5 /* HYSinaActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYSinaActivity.h; sourceTree = "<group>"; };
+		AABDD7121A82EF5D00D21BC5 /* HYSinaActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYSinaActivity.m; sourceTree = "<group>"; };
+		AABDD7131A82EF5D00D21BC5 /* HYTencentQzoneActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTencentQzoneActivity.h; sourceTree = "<group>"; };
+		AABDD7141A82EF5D00D21BC5 /* HYTencentQzoneActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTencentQzoneActivity.m; sourceTree = "<group>"; };
+		AABDD7151A82EF5D00D21BC5 /* HYTencentSessionActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYTencentSessionActivity.h; sourceTree = "<group>"; };
+		AABDD7161A82EF5D00D21BC5 /* HYTencentSessionActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYTencentSessionActivity.m; sourceTree = "<group>"; };
+		AABDD7171A82EF5D00D21BC5 /* HYWxSessionActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYWxSessionActivity.h; sourceTree = "<group>"; };
+		AABDD7181A82EF5D00D21BC5 /* HYWxSessionActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYWxSessionActivity.m; sourceTree = "<group>"; };
+		AABDD7191A82EF5D00D21BC5 /* HYWxTimeLineActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYWxTimeLineActivity.h; sourceTree = "<group>"; };
+		AABDD71A1A82EF5D00D21BC5 /* HYWxTimeLineActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYWxTimeLineActivity.m; sourceTree = "<group>"; };
+		AABDD71D1A82EF5D00D21BC5 /* HYShareItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYShareItem.h; sourceTree = "<group>"; };
+		AABDD71E1A82EF5D00D21BC5 /* HYShareItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYShareItem.m; sourceTree = "<group>"; };
+		AABDD71F1A82EF5D00D21BC5 /* HYShareKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYShareKit.h; sourceTree = "<group>"; };
+		AABDD7201A82EF5D00D21BC5 /* HYShareKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYShareKit.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AABDD6E11A82EBEE00D21BC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA6ACCE51A8300F0000A4F83 /* libsqlite3.dylib in Frameworks */,
+				AA6ACCE31A8300AF000A4F83 /* WebKit.framework in Frameworks */,
+				AA6ACCE11A8300A5000A4F83 /* CFNetwork.framework in Frameworks */,
+				AA6ACCD11A82FE3E000A4F83 /* libstdc++.dylib in Frameworks */,
+				AA6ACCDF1A830063000A4F83 /* libz.dylib in Frameworks */,
+				AA6ACCDD1A830056000A4F83 /* SystemConfiguration.framework in Frameworks */,
+				AA6ACCDB1A83001B000A4F83 /* CoreTelephony.framework in Frameworks */,
+				AA6ACCD61A82FE99000A4F83 /* TencentOpenAPI.framework in Frameworks */,
+				53662B7B45EF3EA23682B13E /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AABDD6FA1A82EBEE00D21BC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D512CA09BF0CD1EF0A00662 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A96E21A37369444D0EC4AB2A /* Pods.debug.xcconfig */,
+				45307FFC0D7D9E1E1F28E4F6 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		879EE7EC06ADA8DE50A911C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA6ACCE41A8300F0000A4F83 /* libsqlite3.dylib */,
+				AA6ACCE21A8300AF000A4F83 /* WebKit.framework */,
+				AA6ACCE01A8300A5000A4F83 /* CFNetwork.framework */,
+				AA6ACCDE1A830063000A4F83 /* libz.dylib */,
+				AA6ACCDC1A830056000A4F83 /* SystemConfiguration.framework */,
+				AA6ACCDA1A83001B000A4F83 /* CoreTelephony.framework */,
+				AA6ACCD01A82FE3E000A4F83 /* libstdc++.dylib */,
+				3C70C0509A65899D8E4A2005 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA6ACCD21A82FE99000A4F83 /* HYFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA6ACCD31A82FE99000A4F83 /* TencentQQ */,
+			);
+			path = HYFrameworks;
+			sourceTree = SOURCE_ROOT;
+		};
+		AA6ACCD31A82FE99000A4F83 /* TencentQQ */ = {
+			isa = PBXGroup;
+			children = (
+				AA6ACCD41A82FE99000A4F83 /* TencentOpenAPI.framework */,
+				AA6ACCD51A82FE99000A4F83 /* TencentOpenApi_IOS_Bundle.bundle */,
+			);
+			path = TencentQQ;
+			sourceTree = "<group>";
+		};
+		AA6ACCED1A835B95000A4F83 /* HYShareHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				AA6ACCEE1A835B95000A4F83 /* HYShareHandler.h */,
+				AA6ACCEF1A835B95000A4F83 /* HYShareHandler.m */,
+				AA6ACCF01A835B95000A4F83 /* HYSinaHandler.h */,
+				AA6ACCF11A835B95000A4F83 /* HYSinaHandler.m */,
+				AA6ACCF21A835B95000A4F83 /* HYTencentHandler.h */,
+				AA6ACCF31A835B95000A4F83 /* HYTencentHandler.m */,
+				AA6ACCF41A835B95000A4F83 /* HYWxHandler.h */,
+				AA6ACCF51A835B95000A4F83 /* HYWxHandler.m */,
+			);
+			path = HYShareHandlers;
+			sourceTree = "<group>";
+		};
+		AABDD6DB1A82EBEE00D21BC5 = {
+			isa = PBXGroup;
+			children = (
+				AABDD6EB1A82EBEE00D21BC5 /* AppDelegate.h */,
+				AABDD6EC1A82EBEE00D21BC5 /* AppDelegate.m */,
+				AA6ACCE71A83046C000A4F83 /* LaunchScreen.xib */,
+				AA6ACCE91A83046C000A4F83 /* Main.storyboard */,
+				AABDD6E61A82EBEE00D21BC5 /* HYShareDemo */,
+				AABDD7001A82EBEE00D21BC5 /* HYShareDemoTests */,
+				AABDD6E51A82EBEE00D21BC5 /* Products */,
+				2D512CA09BF0CD1EF0A00662 /* Pods */,
+				879EE7EC06ADA8DE50A911C7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AABDD6E51A82EBEE00D21BC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AABDD6E41A82EBEE00D21BC5 /* HYShareDemo.app */,
+				AABDD6FD1A82EBEE00D21BC5 /* HYShareDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AABDD6E61A82EBEE00D21BC5 /* HYShareDemo */ = {
+			isa = PBXGroup;
+			children = (
+				AA6ACCD21A82FE99000A4F83 /* HYFrameworks */,
+				AABDD70D1A82EF5D00D21BC5 /* HYShare */,
+				AABDD6EE1A82EBEE00D21BC5 /* ViewController.h */,
+				AABDD6EF1A82EBEE00D21BC5 /* ViewController.m */,
+				AA6ACCC51A82F96C000A4F83 /* HYImageUtilities.h */,
+				AA6ACCC61A82F96C000A4F83 /* HYImageUtilities.m */,
+				AABDD6E71A82EBEE00D21BC5 /* Supporting Files */,
+			);
+			path = HYShareDemo;
+			sourceTree = "<group>";
+		};
+		AABDD6E71A82EBEE00D21BC5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AABDD6F41A82EBEE00D21BC5 /* Images.xcassets */,
+				AABDD6E81A82EBEE00D21BC5 /* Info.plist */,
+				AABDD6E91A82EBEE00D21BC5 /* main.m */,
+				AA6ACCBE1A82F6F0000A4F83 /* HY_Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AABDD7001A82EBEE00D21BC5 /* HYShareDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				AABDD7031A82EBEE00D21BC5 /* HYShareDemoTests.m */,
+				AABDD7011A82EBEE00D21BC5 /* Supporting Files */,
+			);
+			path = HYShareDemoTests;
+			sourceTree = "<group>";
+		};
+		AABDD7011A82EBEE00D21BC5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AABDD7021A82EBEE00D21BC5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AABDD70D1A82EF5D00D21BC5 /* HYShare */ = {
+			isa = PBXGroup;
+			children = (
+				AA6ACCED1A835B95000A4F83 /* HYShareHandlers */,
+				AABDD70E1A82EF5D00D21BC5 /* Activities */,
+				AABDD71F1A82EF5D00D21BC5 /* HYShareKit.h */,
+				AABDD7201A82EF5D00D21BC5 /* HYShareKit.m */,
+				AABDD71D1A82EF5D00D21BC5 /* HYShareItem.h */,
+				AABDD71E1A82EF5D00D21BC5 /* HYShareItem.m */,
+			);
+			path = HYShare;
+			sourceTree = "<group>";
+		};
+		AABDD70E1A82EF5D00D21BC5 /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				AABDD70F1A82EF5D00D21BC5 /* HYShareActivity.h */,
+				AABDD7101A82EF5D00D21BC5 /* HYShareActivity.m */,
+				AABDD7111A82EF5D00D21BC5 /* HYSinaActivity.h */,
+				AABDD7121A82EF5D00D21BC5 /* HYSinaActivity.m */,
+				AABDD7131A82EF5D00D21BC5 /* HYTencentQzoneActivity.h */,
+				AABDD7141A82EF5D00D21BC5 /* HYTencentQzoneActivity.m */,
+				AABDD7151A82EF5D00D21BC5 /* HYTencentSessionActivity.h */,
+				AABDD7161A82EF5D00D21BC5 /* HYTencentSessionActivity.m */,
+				AABDD7171A82EF5D00D21BC5 /* HYWxSessionActivity.h */,
+				AABDD7181A82EF5D00D21BC5 /* HYWxSessionActivity.m */,
+				AABDD7191A82EF5D00D21BC5 /* HYWxTimeLineActivity.h */,
+				AABDD71A1A82EF5D00D21BC5 /* HYWxTimeLineActivity.m */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AABDD6E31A82EBEE00D21BC5 /* HYShareDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AABDD7071A82EBEE00D21BC5 /* Build configuration list for PBXNativeTarget "HYShareDemo" */;
+			buildPhases = (
+				666D08C880CD53AFECEE1FD0 /* Check Pods Manifest.lock */,
+				AABDD6E01A82EBEE00D21BC5 /* Sources */,
+				AABDD6E11A82EBEE00D21BC5 /* Frameworks */,
+				AABDD6E21A82EBEE00D21BC5 /* Resources */,
+				BF37ECCE896D18E674DD2A31 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HYShareDemo;
+			productName = HYShareDemo;
+			productReference = AABDD6E41A82EBEE00D21BC5 /* HYShareDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AABDD6FC1A82EBEE00D21BC5 /* HYShareDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AABDD70A1A82EBEE00D21BC5 /* Build configuration list for PBXNativeTarget "HYShareDemoTests" */;
+			buildPhases = (
+				AABDD6F91A82EBEE00D21BC5 /* Sources */,
+				AABDD6FA1A82EBEE00D21BC5 /* Frameworks */,
+				AABDD6FB1A82EBEE00D21BC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AABDD6FF1A82EBEE00D21BC5 /* PBXTargetDependency */,
+			);
+			name = HYShareDemoTests;
+			productName = HYShareDemoTests;
+			productReference = AABDD6FD1A82EBEE00D21BC5 /* HYShareDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AABDD6DC1A82EBEE00D21BC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = " Harry Yan";
+				TargetAttributes = {
+					AABDD6E31A82EBEE00D21BC5 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					AABDD6FC1A82EBEE00D21BC5 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = AABDD6E31A82EBEE00D21BC5;
+					};
+				};
+			};
+			buildConfigurationList = AABDD6DF1A82EBEE00D21BC5 /* Build configuration list for PBXProject "HYShareDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AABDD6DB1A82EBEE00D21BC5;
+			productRefGroup = AABDD6E51A82EBEE00D21BC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AABDD6E31A82EBEE00D21BC5 /* HYShareDemo */,
+				AABDD6FC1A82EBEE00D21BC5 /* HYShareDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AABDD6E21A82EBEE00D21BC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA6ACCD71A82FE99000A4F83 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
+				AA6ACCEB1A83046C000A4F83 /* LaunchScreen.xib in Resources */,
+				AABDD6F51A82EBEE00D21BC5 /* Images.xcassets in Resources */,
+				AA6ACCEC1A83046C000A4F83 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AABDD6FB1A82EBEE00D21BC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		666D08C880CD53AFECEE1FD0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BF37ECCE896D18E674DD2A31 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AABDD6E01A82EBEE00D21BC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AABDD7281A82EF5D00D21BC5 /* HYSinaActivity.m in Sources */,
+				AA6ACCF61A835B95000A4F83 /* HYShareHandler.m in Sources */,
+				AABDD72B1A82EF5D00D21BC5 /* HYWxSessionActivity.m in Sources */,
+				AABDD72F1A82EF5D00D21BC5 /* HYShareKit.m in Sources */,
+				AABDD6F01A82EBEE00D21BC5 /* ViewController.m in Sources */,
+				AABDD72C1A82EF5D00D21BC5 /* HYWxTimeLineActivity.m in Sources */,
+				AA6ACCF91A835B95000A4F83 /* HYWxHandler.m in Sources */,
+				AABDD72E1A82EF5D00D21BC5 /* HYShareItem.m in Sources */,
+				AABDD7271A82EF5D00D21BC5 /* HYShareActivity.m in Sources */,
+				AABDD6ED1A82EBEE00D21BC5 /* AppDelegate.m in Sources */,
+				AABDD6EA1A82EBEE00D21BC5 /* main.m in Sources */,
+				AA6ACCF81A835B95000A4F83 /* HYTencentHandler.m in Sources */,
+				AA6ACCC71A82F96C000A4F83 /* HYImageUtilities.m in Sources */,
+				AABDD7291A82EF5D00D21BC5 /* HYTencentQzoneActivity.m in Sources */,
+				AA6ACCF71A835B95000A4F83 /* HYSinaHandler.m in Sources */,
+				AABDD72A1A82EF5D00D21BC5 /* HYTencentSessionActivity.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AABDD6F91A82EBEE00D21BC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AABDD7041A82EBEE00D21BC5 /* HYShareDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AABDD6FF1A82EBEE00D21BC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AABDD6E31A82EBEE00D21BC5 /* HYShareDemo */;
+			targetProxy = AABDD6FE1A82EBEE00D21BC5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AA6ACCE71A83046C000A4F83 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA6ACCE81A83046C000A4F83 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		AA6ACCE91A83046C000A4F83 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA6ACCEA1A83046C000A4F83 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AABDD7051A82EBEE00D21BC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AABDD7061A82EBEE00D21BC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AABDD7081A82EBEE00D21BC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A96E21A37369444D0EC4AB2A /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HYFrameworks/TencentQQ",
+				);
+				GCC_PREFIX_HEADER = HYShareDemo/HY_Prefix.pch;
+				INFOPLIST_FILE = HYShareDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "adeb98a2-0318-46fd-8bbb-ce497b08f93f";
+			};
+			name = Debug;
+		};
+		AABDD7091A82EBEE00D21BC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45307FFC0D7D9E1E1F28E4F6 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HYFrameworks/TencentQQ",
+				);
+				GCC_PREFIX_HEADER = HYShareDemo/HY_Prefix.pch;
+				INFOPLIST_FILE = HYShareDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "adeb98a2-0318-46fd-8bbb-ce497b08f93f";
+			};
+			name = Release;
+		};
+		AABDD70B1A82EBEE00D21BC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HYShareDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HYShareDemo.app/HYShareDemo";
+			};
+			name = Debug;
+		};
+		AABDD70C1A82EBEE00D21BC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HYShareDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HYShareDemo.app/HYShareDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AABDD6DF1A82EBEE00D21BC5 /* Build configuration list for PBXProject "HYShareDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AABDD7051A82EBEE00D21BC5 /* Debug */,
+				AABDD7061A82EBEE00D21BC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AABDD7071A82EBEE00D21BC5 /* Build configuration list for PBXNativeTarget "HYShareDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AABDD7081A82EBEE00D21BC5 /* Debug */,
+				AABDD7091A82EBEE00D21BC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AABDD70A1A82EBEE00D21BC5 /* Build configuration list for PBXNativeTarget "HYShareDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AABDD70B1A82EBEE00D21BC5 /* Debug */,
+				AABDD70C1A82EBEE00D21BC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AABDD6DC1A82EBEE00D21BC5 /* Project object */;
+}

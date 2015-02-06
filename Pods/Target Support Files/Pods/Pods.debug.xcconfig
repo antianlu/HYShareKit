@@ -1,0 +1,7 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Weibo" "${PODS_ROOT}/Headers/Public/WeixinSDK"
+LIBRARY_SEARCH_PATHS = "$(PODS_ROOT)/Weibo/libWeiboSDK" "$(PODS_ROOT)/WeixinSDK/WeChatSDK_1.4.3"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/Weibo" -isystem "${PODS_ROOT}/Headers/Public/WeixinSDK"
+OTHER_LDFLAGS = -ObjC -l"Pods-Weibo" -l"Pods-WeixinSDK" -l"WeChatSDK" -l"WeiboSDK"
+OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
+PODS_ROOT = ${SRCROOT}/Pods

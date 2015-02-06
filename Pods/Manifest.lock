@@ -1,0 +1,13 @@
+PODS:
+  - Weibo (2.4.2)
+  - WeixinSDK (1.4.3)
+
+DEPENDENCIES:
+  - Weibo
+  - WeixinSDK
+
+SPEC CHECKSUMS:
+  Weibo: 6b3bcdadfc9a77a6b989c0fdd1585ecc2062bfa6
+  WeixinSDK: 18b135b210d4a03dff56c138410a3598877c5480
+
+COCOAPODS: 0.35.0
